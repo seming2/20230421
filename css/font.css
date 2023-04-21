@@ -1,0 +1,245 @@
+body{
+    font-family: 'Pretendard';
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.text-white{
+    color:white
+}
+.text-center{
+    text-align: center;
+}
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+h1{ font-size: 50px;}
+
+
+.hd{
+    border: 2px solid #ccc;
+    border-radius: 60px;
+    padding: 1em 2em;
+    justify-content: space-between;
+    align-items: center;
+
+    /* 포지션 */
+
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+
+
+    /*        */
+}
+#gnb li{
+    padding-left: 1em;
+    font-weight: 400;
+}
+
+#gnb  li:hover a{
+    transition: 0.9s;
+}
+
+/* 가상 컨텐츠 만들기 */
+
+
+#gnb li::after{
+    content: "";
+    display:block;
+    height: 5px;
+    width:0px;
+    transition: 0.5s;
+    
+}
+
+#gnb li:nth-child(1)::after{
+    background-color: black;
+}
+#gnb li:nth-child(2)::after{
+    background-color: red;
+}
+#gnb li:nth-child(3)::after{
+    background-color: blue;
+}
+#gnb li:nth-child(1):hover a{
+    color: black;
+    background-color: #ccc;
+}
+#gnb li:nth-child(2):hover a{
+    color: red;
+    background-color: aqua;
+}
+#gnb li:nth-child(3):hover a{
+    color: blue;
+    background-color: wheat;
+}
+
+/*  */
+
+
+
+
+
+
+/* #gnb li:nth-child(2)::after{
+    content: "";
+    display:block;
+    height: 5px;
+    background-color: green;
+    width:px;
+    transition: 0.5s;
+
+}
+
+#gnb li:nth-child(3)::after{
+    content: "";
+    display:block;
+    height: 2px;
+    background-color: rgb(194, 70, 13);
+    width:0px;
+    transition: 0.5s;
+    
+    
+
+} */
+#gnb  li:hover::after{
+    width:100%;
+    display: block;
+    height: 5px;
+    transition: 0.5s;
+
+
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+.child1, .child2, .child3{
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.child1{
+    background-color: yellow;  
+    color: blue;
+    
+}
+.child2{
+    background-color: rgb(125, 125, 111);  
+    color: red;
+}
+.child3{
+    background-color: blanchedalmond;  
+}
+
+.ft{
+    padding: 2em;
+}
+
+
+.sns{
+   justify-content: center;
+}
+
+.sns li{ padding: 8px; border-radius: 20px; margin: 0 10px;}
+
+.sns li:first-child{
+    background-color: rgb(126, 16, 101);
+}
+.sns li:nth-child(2){
+    background-color: rgb(23, 23, 163); 
+}
+.sns li:last-child{
+    background-color: rgb(164, 0, 0);    
+}
+
+
+
+/* sgv 다루기 */
+
+.hd h1 svg{
+    height: 1.5rem;
+    display: block;
+    
+    
+    
+    
+}
+
+.hd h1 a{
+    display:block;
+    
+    
+}
+
+
+.hd h1 a svg path{
+    transition: 1.5s;
+}
+
+.hd h1 a svg path{
+    fill:rgb(3, 0, 1);
+    
+}
+
+.hd h1 a:hover svg path{
+    fill: red;
+
+
+}
+
+.hd h1 a svg path:nth-child(5){
+    fill:#ccc;
+}
+.hd h1 a:hover svg path:nth-child(5){
+    fill:black;
+     
+}
+
+.hd h1 a:hover svg path:nth-child(3){
+    fill:aqua;
+    
+}
+
+.hd h1 a:hover svg path:nth-child(2){
+    fill:fuchsia;
+}
+
+/* svg다루기 끝 */
+
+
+
+.child1 h2:hover{
+    font-size: 20px;
+    color:red;
+    border-bottom: 2px;
+
+}
+
+#work h2:hover{
+    font-size: 200px;
+    transition: 0.9s;
+    color: greenyellow;
+    border: 2px solid #ccc;
+    border-radius: 60px;
+    padding: 2em 2em;
+    
+}
